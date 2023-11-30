@@ -56,9 +56,11 @@ CONTAINER_CONFIGS = {
         'container_position_high': (.7, 0.26, -.30),
         'container_position_default': (.50, 0.26, -.30),
         'container_position_z': -0.35,
-        'place_success_height_threshold': -0.32,
+        # 'place_success_height_threshold': -0.32,
+        'place_success_height_threshold': -0.2, # NOTE: at this point we igonre the height for success detection for diverse env
+
         # 'place_success_radius_threshold': 0.04,
-        'place_success_radius_threshold': 0.05,
+        'place_success_radius_threshold': 0.06,
         'container_orientation': (0, 0, 0.707107, 0.707107),
         'container_scale': 0.07,
         'min_distance_from_object': 0.11,
@@ -374,9 +376,9 @@ CONTAINER_CONFIGS_DIVERSE = {
         'container_position_high': diverse_high,
         'container_position_default': (.50, 0.26, -.30),
         'container_position_z': -0.35,
-        'place_success_height_threshold': -0.32,
+        'place_success_height_threshold': -0.2, # NOTE: at this point we igonre the height for success detection for diverse env
         # 'place_success_radius_threshold': 0.04,
-        'place_success_radius_threshold': 0.05,
+        'place_success_radius_threshold': 0.06,
         'container_orientation': (0, 0, 0.707107, 0.707107),
         'container_scale': 0.07,
         'min_distance_from_object': 0.11,
@@ -682,7 +684,7 @@ PICK_PLACE_TRAIN_OBJECTS = [
 
 OBJECT_SCALINGS = {
     'conic_cup': 0.6,
-    'ball': 1.0,
+    'ball': 0.7,
     'sack_vase': 0.6,
     'fountain_vase': 0.4,
     'shed': 0.6,
