@@ -52,7 +52,7 @@ CONTAINER_CONFIGS = {
         'min_distance_from_object': 0.11,
     },
     'bowl_small': {
-        'container_position_low': (.5, 0.26, -.30),
+        'container_position_low': (.6, 0.26, -.30),
         'container_position_high': (.7, 0.26, -.30),
         'container_position_default': (.50, 0.26, -.30),
         'container_position_z': -0.35,
